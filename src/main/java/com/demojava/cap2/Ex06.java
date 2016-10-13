@@ -12,7 +12,7 @@ public class Ex06 {
 		StorageTest st = new StorageTest();
 		
 		System.out.println("Hello occupies " + st.storage("Hello") + " bytes"); 
-		
+		System.out.println(st);
 
 	}
 
