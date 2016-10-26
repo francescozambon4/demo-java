@@ -22,6 +22,15 @@
     <artifactId>javassist</artifactId>
     <version>3.22.0-CR1</version>
 </dependency>
+
+<!-- https://mvnrepository.com/artifact/com.jcabi/jcabi-aspects -->
+<dependency>
+    <groupId>com.jcabi</groupId>
+    <artifactId>jcabi-aspects</artifactId>
+    <version>0.22.5</version>
+</dependency>
+
+
 	</dependencies>
 
 	<build>
