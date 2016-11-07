@@ -1,17 +1,25 @@
 import java.util.Date;
 import java.util.Random;
 
+import org.apache.log4j.Logger;
 import org.junit.Test;
 
 import com.jcabi.aspects.Loggable;
 
-public class JacabiTest {
 
+public class JcabiTest {
+	final static Logger logger = Logger.getLogger("JacabiTest.class");
 	
 	@Test
 	@Loggable
     public void test() throws Exception {
-		Random r = new Random(10001);
+		//logs a debug message
+		if(logger.isDebugEnabled()){
+		    logger.debug("This is debug");
+		}
+		logger.warn("This is a Warn");
+		
+		Random r = new Random();
 		long start = new Date().getTime();
 		System.out.println("Start: " + start);
 		long time = r.nextInt(1000);
@@ -24,3 +32,4 @@ public class JacabiTest {
 		
 	}
 }
+ 
